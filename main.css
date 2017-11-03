@@ -16,6 +16,9 @@ a, a:link, a:visited {
 }
 .content{
 	background-color:white;
+	 max-width: 80%;
+    margin: 0 auto;
+	text-align:left;
 }
 footer {
     margin-top: 50px;
@@ -24,12 +27,20 @@ footer {
     width: 100%;
 }
 
+.slider{
+	background-color:white;
+}
 .slider-image {
+
     width: 100%;
 }
 
 .products {
     margin: 0 auto;
+	background-color:white;
+	 max-width: 80%;
+
+	text-align:left;
 }
 
 .product {

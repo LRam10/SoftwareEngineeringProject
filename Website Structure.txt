@@ -4,3 +4,5 @@ For the CarType page: There are 4 car categories: Toyota, Mercedes, Honda, Nissa
 Each of car type will lead to each index page for that type.
 
 There are 5 cars for each index page. Each car has its own desciption page and rental detail.
+
+For car pictures in indexCar page: Resize the picture with 500pixel horizontal

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+    <script src="assets/slippry.min.js"></script>
+    <link rel="stylesheet" href="assets/slippry.css">
+    <script type="text/javascript">
+        function validateEmail(email) {
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function validateForm() {
+            if (document.forms[0].name.value === '') {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            if (document.forms[0].email.value === '' || validateEmail(document.forms[0].email.value)) {
+                alert("E-mail is empty or invalid");
+                return false;
+            }
+
+            if (document.forms[0].phone.value === '' || document.forms[0].phone.value === 'Enter your phone number') {
+                alert("Phone Number must be filled out");
+                return false;
+            }
+
+            window.open('mailto:test@example.com?subject=contact-form&body="name: '  + document.forms[0].name.value + '" email: '+ document.forms[0].email.value +' Phone: ' + document.forms[0].phone.value + '');
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+
+</div>
+<nav>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+			<li><a href="CarType.html">Car Type</a><li>          
+        </ul>
+</nav>
+<div class="wrapper">
+</div>
+    <div class="content homepage">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac lacus sit amet arcu porttitor auctor.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Cras porttitor augue sed rhoncus fringilla. Suspendisse facilisis libero sit amet ultrices lobortis.
+            Quisque vehicula enim enim, vestibulum viverra nunc tristique vel. Duis finibus, libero et volutpat dapibus,
+            lacus nulla efficitur ligula, laoreet iaculis nisl orci non quam. Donec sagittis non nunc et placerat.
+            Curabitur pretium volutpat purus sit amet aliquet. Morbi in condimentum arcu, ornare convallis nulla.
+            Praesent ac augue non dolor blandit lobortis. Morbi ac neque sit amet est congue tempus vitae in purus.
+            Donec ut elit at massa commodo efficitur. Praesent dictum purus nulla, ut porttitor mauris ornare vitae.
+            Vestibulum consequat nisi et neque condimentum rhoncus.
+        </p>
+    
+
+    <h3>Contact Us</h3>
+    <form action="" method="post" enctype="text/plain" onsubmit="return validateForm()">
+        <table>
+            <colgroup span="1" style="width: 100px"></colgroup>
+            <colgroup span="1" style="width: 150px"></colgroup>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" size="75" name="name" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" size="75" name="email" /></td>
+            </tr>
+            <tr>
+                <td>Telephone</td>
+                <td><input type="text" size="75" name="phone" /></td>
+            </tr>
+        </table>
+        <p>Questions or comment <br />
+            <textarea rows="6" cols="70">Enter your question or comment here</textarea>
+        </p>
+        <p>
+            <input type="reset" />
+            <input type="submit" />
+        </p>
+    </form>
+	</div>
+<footer>
+    <div class="wrapper">
+        <div class="footer-panel left-panel">
+            <h2>Social Media</h2>
+        </div>
+        <div class="footer-panel center-panel">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="footer-panel right-panel">
+            <h2>Pages</h2>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

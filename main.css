@@ -33,6 +33,7 @@ footer {
 .slider-image {
 
     width: 100%;
+	
 }
 
 .products {
@@ -62,6 +63,7 @@ footer {
 }
 .nav-menu {
     width: 100%;
+	
 
 }
 
@@ -127,8 +129,11 @@ footer {
 }
 .car-info input[type=text]{
 	width: 5em;
-	height:1.55em;
+	height:2.15em;
+	display: inline-block;
 }
-
+.car-type{
+	padding: 10px;
+}
 
 
